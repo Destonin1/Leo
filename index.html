@@ -51,8 +51,28 @@
 						</div>
 					</div>
 				</div>
-				
+			</div>
 
+			<div class="menu_wrapper">
+				<div class="menu_small">
+					<ul>
+						<li>
+							<a href="#">Solutions</a>
+						</li>
+						<li>
+							<a href="#">Products</a>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li>
+						<a href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container">
 				<div class="slider_top_mainwrap">
 					<div class="row">
 						<div class="col-md-12">
@@ -65,7 +85,7 @@
 					
 										<div class="slider_text">
 											<h1>Introducing </h1>
-											<h2>Something hot......</h2>
+											<h2>Something hot...</h2>
 											<a href="#">Try Demo</a>
 										</div>
 									</div>
@@ -103,22 +123,6 @@
 					</div>
 				</div>
 			</div>
-			<div class="menu_small">
-					<ul>
-						<li>
-							<a href="#">Solutions</a>
-						</li>
-						<li>
-							<a href="#">Products</a>
-						</li>
-						<li>
-							<a href="#">Portfolio</a>
-						</li>
-						<li>
-						<a href="#">Contact</a>
-						</li>
-					</ul>
-				</div>
 	</header>
 
 	<section id="main_slider">
@@ -289,8 +293,19 @@
 		<script type="text/javascript" src="js/script.js"></script>
 		<script>
 			$('.slider_top').slick({
+				autoplay: true,
+  				autoplaySpeed: 5000,
 				prevArrow: '<button type="button" class="ss-btn slide-slick-next"><img src="img/arrow-left.png"></button>',
-				nextArrow: '<button type="button" class="ss-btn slide-slick-prev"><img src="img/arrow-right.png"></button>' 
+				nextArrow: '<button type="button" class="ss-btn slide-slick-prev"><img src="img/arrow-right.png"></button>',
+				responsive: [
+				{
+					breakpoint: 576,
+				      settings: {
+				      	arrows: false,
+				      	dots: true
+				      }
+				}
+				] 
 			});
 
 			$('.slider-middle-items').slick({
@@ -303,7 +318,7 @@
 			});
 
 			$('.fa-bars').on('click', function() {
-				$('.menu_small').toggleClass('menu_small_active').fadeIn(500);
+				$('.menu_small').toggleClass('menu_small_active');
 			});
 
 			$('.footer_slider').slick();
