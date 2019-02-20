@@ -22,8 +22,8 @@ body {
 	font-family: Segoe, sans-serif;
 }
 
-img { max-width: 100%;
-
+img { 
+	max-width: 100%;
 }
 
 .menu_small, .menu_btn {
@@ -691,7 +691,6 @@ footer {
 
 	#nav-btns {
 		margin-top: 2rem;
-		height: 130px;
 	}
 
 	.slide-nav-btn img {
@@ -699,13 +698,9 @@ footer {
 		padding: 0.5rem;
 	}
 
-	.slide-nav-btn {
-		height: 100%;
-	}
-
 	.slide-nav-btn span {
 		font-size: 1.4rem;
-		padding-bottom: 1rem;
+		padding-bottom: 2rem;
 		margin: 0;
 	}
 
