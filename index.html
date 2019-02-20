@@ -10,7 +10,7 @@
 		<title>Leo</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
+		<link href="css/bootstrap-grid.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
@@ -23,12 +23,12 @@
 	<header>
 			<div class="container">
 				<div class="row menuandlogo">
-					<div class="col-md-5">
+					<div class="col-md-5 col-9">
 						<div class="logo">
 							<img src="img/logo.png" alt="logo">
 						</div>
 					</div>
-					<div class="col-md-7">
+					<div class="col-md-7 col-2">
 						<div class="menu">
 							<ul>
 								<li>
@@ -45,60 +45,83 @@
 								</li>
 							</ul>
 						</div>
+
+						<div class="menu_btn">
+							<i class="fas fa-bars"></i>
+						</div>
 					</div>
 				</div>
+				
 
-				<div class="row">
-					<div class="col-md-12">
-						<div class="slider_top">
-							<div class="slider">
-								<div class="slider_item">
-									<div class="slider_img">
-										<img src="img/banner.png" alt="banner">
-									</div>
-
-									<div class="slider_text">
-										<h1>Introducing </h1>
-										<h2>Something hot......</h2>
-										<a href="#">Try Demo</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="slider">
-								<div class="slider_item">
-									<div class="slider_img">
-										<img src="img/banner.png" alt="banner">
-									</div>
-
-									<div class="slider_text">
-										<h1>Introducing </h1>
-										<h2>Something hot......</h2>
-										<a href="#">Try Demo</a>
+				<div class="slider_top_mainwrap">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="slider_top">
+								<div class="slider">
+									<div class="slider_item">
+										<div class="slider_img">
+											<img src="img/banner.png" alt="banner">
+										</div>
+					
+										<div class="slider_text">
+											<h1>Introducing </h1>
+											<h2>Something hot......</h2>
+											<a href="#">Try Demo</a>
+										</div>
 									</div>
 								</div>
-							</div>
-
-							<div class="slider">
-								<div class="slider_item">
-									<div class="slider_img">
-										<img src="img/banner.png" alt="banner">
-									</div>
-
-									<div class="slider_text">
-										<h1>Introducing </h1>
-										<h2>Something hot......</h2>
-										<a href="#">Try Demo</a>
+					
+								<div class="slider">
+									<div class="slider_item">
+										<div class="slider_img">
+											<img src="img/banner.png" alt="banner">
+										</div>
+					
+										<div class="slider_text">
+											<h1>Introducing </h1>
+											<h2>Something hot......</h2>
+											<a href="#">Try Demo</a>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div><!--slider_top-->
+					
+								<div class="slider">
+									<div class="slider_item">
+										<div class="slider_img">
+											<img src="img/banner.png" alt="banner">
+										</div>
+					
+										<div class="slider_text">
+											<h1>Introducing </h1>
+											<h2>Something hot......</h2>
+											<a href="#">Try Demo</a>
+										</div>
+									</div>
+								</div>
+							</div><!--slider_top-->
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="menu_small">
+					<ul>
+						<li>
+							<a href="#">Solutions</a>
+						</li>
+						<li>
+							<a href="#">Products</a>
+						</li>
+						<li>
+							<a href="#">Portfolio</a>
+						</li>
+						<li>
+						<a href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
 	</header>
 
-	<section>
+	<section id="main_slider">
 		<div class="container">
 			<ul id="nav-btns">
             	<li id="li1" class="slide-nav-btn">
@@ -195,8 +218,8 @@
 
 	<footer>
 		<div class="container">
-			<div class="footer_information">
-				<div class="about_us">
+			<div class="row footer_information">
+				<div class="about_us col-sm-6 col-md-2">
 					<h4>About Us</h4>									
 					<ul class="footer_menu">
 						<li><a href="#">About Us</a></li>
@@ -208,7 +231,7 @@
 					</ul>
 				</div>
 
-				<div class="about_us">
+				<div class="about_us col-sm-6 col-md-2">
 					<h4>About Us</h4>									
 					<ul class="footer_menu">
 						<li><a href="#">About Us</a></li>
@@ -220,7 +243,7 @@
 					</ul>
 				</div>>
 
-				<div class="footer_slider">
+				<div class="footer_slider col-sm-8 col-md-4">
 					<div class="footer_slide">
 						<h4>Testimoanials</h4>
 						<p>Lorem Ipsum is simply dummy text of the printing and 
@@ -252,7 +275,7 @@
 					</div>
 				</div><!-- footer_slider-->
 
-				<div class="footer_logo">
+				<div class="footer_logo col-sm-8 col-md-3">
 					<img src="img/footer_logo.png" alt="logo">
 					<p>© cssauthor.com</p>
 				</div>
@@ -277,6 +300,10 @@
             	var thumb = $(slider.slides).data('thumb');
         		return '<div class="dot-play"><img src="img/icon1.png"></div><p class="under_text">Responsive Websites</p>';
         		}
+			});
+
+			$('.fa-bars').on('click', function() {
+				$('.menu_small').toggleClass('menu_small_active').fadeIn(500);
 			});
 
 			$('.footer_slider').slick();
