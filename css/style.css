@@ -704,6 +704,10 @@ footer {
 		margin: 0;
 	}
 
+	li.slide h2 {
+		font-size: 2.5rem;
+	}
+
 	.footer_form {
 		width: 90%;
 	}
