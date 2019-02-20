@@ -259,6 +259,7 @@ li.slide p{
     color: #333;
     margin: 0 auto 10px auto;
     font-weight: 700;
+    white-space: pre;
 }
 .slide-nav-btn:hover{
     cursor: pointer;
@@ -699,7 +700,7 @@ footer {
 	}
 
 	.slide-nav-btn span {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
 		padding-bottom: 2rem;
 		margin: 0;
 	}
