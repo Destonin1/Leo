@@ -723,3 +723,26 @@ footer {
 	}
 
 }
+
+@media screen and (max-width: 330px) {
+	.slide-nav-btn span {
+		display: none;
+	}
+
+	.slide-nav-btn img {
+		padding: 1rem;
+	}
+
+	li.slide h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	.menu_small li {
+		padding: 0.4rem 0.6rem;
+	}
+
+	.menu_small a {
+		font-size: 1.5rem;
+	}
+}
