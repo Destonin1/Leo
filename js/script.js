@@ -17,36 +17,37 @@ $(document).ready(function(){
                 '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
                  '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
              });
+
              slideNow = navBtnId + 1;
         }
  });
 
  $('li#li1').on("click", function(){
  	$(this).css({"border": "2px solid #b7b7b7", "border-bottom": "3px solid #fff"});
- 	$('li#li2').css({"border": "none"});
- 	$('li#li3').css({"border": "none"});
- 	$('li#li4').css({"border": "none"});
+ 	$('li#li2').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li3').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li4').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
  });
 
   $('li#li2').on("click", function(){
  	$(this).css({"border": "2px solid #b7b7b7", "border-bottom": "3px solid #fff"});
- 	$('li#li1').css({"border": "none"});
- 	$('li#li3').css({"border": "none"});
- 	$('li#li4').css({"border": "none"});
+ 	$('li#li1').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li3').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li4').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
  });
 
   $('li#li3').on("click", function(){
  	$(this).css({"border": "2px solid #b7b7b7", "border-bottom": "3px solid #fff"});
- 	$('li#li1').css({"border": "none"});
- 	$('li#li2').css({"border": "none"});
- 	$('li#li4').css({"border": "none"});
+ 	$('li#li1').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li2').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li4').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
  });
 
   $('li#li4').on("click", function(){
  	$(this).css({"border": "2px solid #b7b7b7", "border-bottom": "3px solid #fff"});
- 	$('li#li1').css({"border": "none"});
- 	$('li#li2').css({"border": "none"});
- 	$('li#li3').css({"border": "none"});
+ 	$('li#li1').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li2').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
+ 	$('li#li3').css({"border": "2px solid transparent", "border-bottom": "3px solid transparent"});
  });
 
 });

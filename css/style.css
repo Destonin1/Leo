@@ -26,17 +26,8 @@ img {
 	max-width: 100%;
 }
 
-.menu_small, .menu_btn {
-	display: none;
-}
-
 header {
 	background: url(../img/background.jpg) no-repeat center top / cover;
-}
-
-.menu_wrapper {
-	width: 100%;
-	overflow: hidden;
 }
 
 .menuandlogo {
@@ -233,6 +224,21 @@ li.slide p{
 #li1 {
 	border: 2px solid #b7b7b7;
 	border-bottom: 3px solid #fff;
+}
+
+#li2 {
+	border: 2px solid transparent;
+	border-bottom: 3px solid transparent;
+}
+
+#li3 {
+	border: 2px solid transparent;
+	border-bottom: 3px solid transparent;
+}
+
+#li4 {
+	border: 2px solid transparent;
+	border-bottom: 3px solid transparent;
 }
 
 .slide-nav-btn {
@@ -556,76 +562,28 @@ footer {
 	.choose_text p {
 		padding-left: 0;
 	}
-
-
 }
 
 @media screen and (max-width: 768px) {
 	html {
 		font-size: 8px;
 	}
-	.menu {
-		display: none;
-	}
 
 	.menuandlogo {
 		padding: 3rem 0;
 	}
 
-	.fa-bars {
-		font-size: 3rem;
-		color: #d8d8d7;
-		margin-top: 3rem;
-		cursor: pointer;
+	.logo {
+		margin-bottom: 2rem;
+		text-align: center;
 	}
 
 	.slider_top {
-		margin-top: 2rem;
 		margin-bottom: 0;
 	}
 
 	.ss-btn img {
 		width: 80%;
-	}
-
-	.menu_small {
-		display: block;
-		transform: translateX(100%);
-	}
-
-	.menu_small_active {
-		transform: translateX(0);
-		transition: 0.5s;
-	}
-
-	.menu_btn {
-		display: block;
-	}
-
-	.menu_small li {
-		padding: 0.8rem 1.3rem;
-		border: 3px solid #6898a3;
-		width: 25%;
-		text-align: center;
-		background: #444444;
-	}
-
-	.menu_small ul {
-		list-style: none;
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.menu_small a {
-		text-decoration: none;
-		color: #9bbac1;
-		font-size: 2rem;
-	}
-
-	.menu_small li:hover {
-		background: #08a8a2;
-		color: #fff;
-		font-weight: 700;
 	}
 
 	.slide-nav-btn span {
@@ -652,6 +610,10 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+
+	header {
+		background: url(../img/background.jpg) no-repeat center;
+	}
 	
 	.footer_forms {
 		flex-direction: column;
@@ -711,12 +673,6 @@ footer {
 	.form_address {
 		margin-top: 3rem;
 	}
-
-	.logo {
-		width: 50%;
-		margin: 2rem 0 0 3rem;
-	}
-
 }
 
 @media screen and (max-width: 330px) {
@@ -731,13 +687,5 @@ footer {
 	li.slide h2 {
 		font-size: 2rem;
 		margin-bottom: 1rem;
-	}
-
-	.menu_small li {
-		padding: 0.4rem 0.6rem;
-	}
-
-	.menu_small a {
-		font-size: 1.5rem;
 	}
 }
