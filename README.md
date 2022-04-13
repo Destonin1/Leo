@@ -7,5 +7,6 @@ Single page was made for practice HTML/CSS
 ## Built With 
 
 - Jquery
+- Bootstrap
 - HTML5
 - CSS3
